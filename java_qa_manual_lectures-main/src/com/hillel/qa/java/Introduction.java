@@ -33,6 +33,26 @@ public class Introduction {
      * @see <a href="https://www.geeksforgeeks.org/java-main-method-public-static-void-main-string-args/">Стаття стосовно main методу</a>
      */
     public static void main(String[] args) {
+
+      //  String counttry ="qwer";
+     //   int salary = 5;
+     //   double price = 2.2;
+
+     //    double a = 2;
+      //   double b = 3;
+      //   double result = a*b;
+      //  System.out.println(result);
+
+        //      double temp = 37;
+     //   if (temp < 36.6) { System.out.println("lo temp");}
+      //  else if (temp == 36.6) { System.out.println("ok");}
+      //  else if (temp > 36.6) { System.out.println("doctor");}
+
+   //     boolean student = false;
+    //            boolean vidminnik = false;
+    //                   boolean stipendia = false;
+     //                  boolean result = student && vidminnik && stipendia;
+     //   System.out.println(result);
         /*
         Наша перша команда, виводить в консоль те що ви помістили в лапки.
         Важливо розуміти що регістр в JAVA має значення, system.out.println("Hello world");
