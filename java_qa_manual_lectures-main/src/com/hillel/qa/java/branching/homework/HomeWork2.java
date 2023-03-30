@@ -12,14 +12,14 @@ public class HomeWork2 {
      *
      */
     public static void main(String[] args) {
-        double x = 1;
-        double y = 0;
+        double x = 0;
+        double y = 1;
         if ((x > 0) && (y > 0)) { System.out.println("Ціль знаходиться в 1 чверті");}
         else if ((x < 0) && (y > 0)) { System.out.println("Ціль знаходиться в 2 чверті");}
         else if ((x < 0) && (y < 0)) { System.out.println("Ціль знаходиться в 3 чверті");}
         else if ((x > 0) && (y < 0)) { System.out.println("Ціль знаходиться в 4 чверті");}
-        else if ((x == 0) && (y != 0)) { System.out.println("Ціль знаходиться на осі x");}
-        else if ((x != 0) && (y == 0)) { System.out.println("Ціль знаходиться на осі y");}
+        else if ((x == 0) && (y != 0)) { System.out.println("Ціль знаходиться на осі y");}
+        else if ((x != 0) && (y == 0)) { System.out.println("Ціль знаходиться на осі x");}
         else { System.out.println("Ціль знаходиться на нулі");}
 
     }

@@ -22,6 +22,7 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+        // Варіант1 тут не можу додати дрібні числа. Відсотки вказав вручну
         int purchaseAmount = 102; // Сума яку сплатили
         int price = 100 ;   // Ціна товара
 
@@ -41,6 +42,16 @@ public class HomeWork3 {
 
         }
 
+// варіант 2 . Можна використати дрібні числа. Відсотки додає автоматично
+        double purchaseAmount2 = 106;
+        double price2 =100;
+        double cash2 = price2;
+        double cardPrice = price2 + price2*0.02;
+        double accountPrice = price2 + price2*0.05;
+        if (cash2 == purchaseAmount2) {System.out.println("Сплатили готівкою");}
+        else if (cardPrice == purchaseAmount2) {System.out.println("Сплатили карткою");}
+        else if (accountPrice == purchaseAmount2) {System.out.println("Сплатили з рахунку");}
+        else {System.out.println("Немає відповідності будь-якому способу оплати");}
 
     }
 }
