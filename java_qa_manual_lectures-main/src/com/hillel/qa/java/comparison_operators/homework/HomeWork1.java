@@ -12,9 +12,16 @@ public class HomeWork1 {
      * </ol>
      */
     public static void main(String[] args) {
-        /*int a = 5;
+       //Вариант 1
+        int a = 5;
         int b = 3;
-        boolean result = a > b;
-        System.out.println(result);*/
+        boolean result = !(a > b);
+        System.out.println(result);
+        //Вариант 2
+        int c = 5;
+        int d = 3;
+        boolean result2 = c > d;
+        System.out.println(!result2);
+
     }
 }

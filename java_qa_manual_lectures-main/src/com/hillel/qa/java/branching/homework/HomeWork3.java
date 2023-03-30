@@ -22,6 +22,25 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+        int purchaseAmount = 102; // Сума яку сплатили
+        int price = 100 ;   // Ціна товара
+
+
+        switch (102) {
+            case 100 :
+                System.out.println("Сплатили готівкою");
+                break;
+            case 102 :
+                System.out.println("Сплатили карткою");
+                break;
+            case 105 :
+                System.out.println("Сплатили з рахунку");
+                break;
+            default:
+                System.out.println("Немає відповідності будь-якому способу оплати");
+
+        }
+
 
     }
 }

@@ -14,8 +14,16 @@ public class HomeWork2 {
      *  </ul>
      */
     public static void main(String[] args) {
-        /*final int number = 278;
-        int lastDigit;
-        System.out.println(lastDigit);*/
+        final int number = 278;
+        // Варіант 1
+        int lastDigit = (number % 270);
+        System.out.println(lastDigit);
+        // Варіант 2
+        lastDigit = (number - 270);
+        System.out.println(lastDigit);
+        // Варіант  3
+        String text = "" + number ;
+        System.out.println(text.charAt(2));
+
     }
 }

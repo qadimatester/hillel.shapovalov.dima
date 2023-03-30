@@ -14,6 +14,11 @@ public class HomeWork1 {
      * </ul>
      */
     public static void main(String[] args) {
+     short currentYear = 2023 ;
+     short friendYear = 2000 ;
+     int age = (currentYear - friendYear) ;
+     String text = "Моєму другу " + age + " років" ;
+     System.out.println(text);
 
     }
 }

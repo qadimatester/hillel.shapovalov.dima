@@ -44,15 +44,15 @@ public class Introduction {
       //  System.out.println(result);
 
         //      double temp = 37;
-     //   if (temp < 36.6) { System.out.println("lo temp");}
-      //  else if (temp == 36.6) { System.out.println("ok");}
+       // if (temp < 36.6) { System.out.println("lo temp");}
+       // else if (temp == 36.6) { System.out.println("ok");}
       //  else if (temp > 36.6) { System.out.println("doctor");}
 
-   //     boolean student = false;
-    //            boolean vidminnik = false;
-    //                   boolean stipendia = false;
-     //                  boolean result = student && vidminnik && stipendia;
-     //   System.out.println(result);
+       //        boolean student = false;
+        //        boolean vidminnik = false;
+       //                boolean stipendia = false;
+        //               boolean result = student && vidminnik && stipendia;
+       // System.out.println(result);
         /*
         Наша перша команда, виводить в консоль те що ви помістили в лапки.
         Важливо розуміти що регістр в JAVA має значення, system.out.println("Hello world");
