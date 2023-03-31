@@ -33,6 +33,11 @@ public class Introduction {
      * @see <a href="https://www.geeksforgeeks.org/java-main-method-public-static-void-main-string-args/">Стаття стосовно main методу</a>
      */
     public static void main(String[] args) {
+        int n = 50;
+        while (n>0) {
+            System.out.println("Qa is cool");
+            n--;
+        }
 
       //  String counttry ="qwer";
      //   int salary = 5;
@@ -58,7 +63,7 @@ public class Introduction {
         Важливо розуміти що регістр в JAVA має значення, system.out.println("Hello world");
         не спрацює, тому що з маленької букви.
          */
-        System.out.println("Hello world");
+       // System.out.println("Hello world");
 
         // TODO: Створіть свій клас та виведіть там "QA це круто!"
     }
