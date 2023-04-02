@@ -1,5 +1,8 @@
 package com.hillel.qa.java.cycles.homework;
 
+//import java.lang.foreign.SymbolLookup;
+import java.util.Scanner;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -32,6 +35,28 @@ public class HomeWork4 {
      * </p>
      */
     public static void main(String[] args) {
-
+        System.out.println("Введіть символ");
+        Scanner symbo = new Scanner(System.in);
+        String s = symbo.nextLine();
+        System.out.println("Введіть висоту трикутника");
+       Scanner height = new Scanner(System.in);
+       String a = s;
+        for (int h =height.nextInt(); h>0; h--) {
+            System.out.println(a);
+            a = a + s;
+        }
+/* вариант 2
+        System.out.println("Введіть символ");
+        Scanner symbo = new Scanner(System.in);
+        String s = symbo.nextLine();
+        System.out.println("Введіть висоту трикутника");
+        Scanner height = new Scanner(System.in);
+        int h =height.nextInt();
+        String a = s;
+        while (h > 0) {
+            System.out.println(a);
+            a = a + s;
+                h--;
+        } */
     }
 }
