@@ -33,50 +33,49 @@ public class HomeWork {
          Thread.sleep(1000);
 
          // 1. Створити користувача
-
+         String singupName = "Dmytro";
+         String singupLastName ="Shap";
+         String singupEmail = "qatest1234@gmail.com";
+         String singupPassword = "Qwerty1234";
          driver.findElement(By.cssSelector(".hero-descriptor_btn")).click();
          Thread.sleep(1000);
-         driver.findElement(By.id("signupName")).sendKeys("Dmytro");
+         driver.findElement(By.id("signupName")).sendKeys(singupName);
          Thread.sleep(500);
-         driver.findElement(By.id("signupLastName")).sendKeys("Shap");
+         driver.findElement(By.id("signupLastName")).sendKeys(singupLastName);
          Thread.sleep(500);
-         driver.findElement(By.id("signupEmail")).sendKeys("qatest1234@gmail.com");
+         driver.findElement(By.id("signupEmail")).sendKeys(singupEmail);
          Thread.sleep(500);
-         driver.findElement(By.id("signupPassword")).sendKeys("Qwerty1234");
+         driver.findElement(By.id("signupPassword")).sendKeys(singupPassword);
          Thread.sleep(500);
-         driver.findElement(By.id("signupRepeatPassword")).sendKeys("Qwerty1234");
+         driver.findElement(By.id("signupRepeatPassword")).sendKeys(singupPassword);
          Thread.sleep(500);
-         driver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-signup-modal/div[3]/button")).click();
+         driver.findElement(By.cssSelector("div.modal-footer > .btn-primary")).click();
          Thread.sleep(1000);
-
          //2 Піти в профайл і перевірити, що там такі ж name і lastName як при реєстрації
-
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[1]/nav/div/a[1]")).click();
+         driver.findElement(By.cssSelector(".btn-sidebar.sidebar_btn.-profile")).click();
          Thread.sleep(1000);
-         WebElement name = driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-profile/div/div[2]/div/p"));
-         Assert.assertEquals("Incorrect Name or Lastname ", "Dmytro Shap", name.getText());
+         WebElement name = driver.findElement(By.cssSelector(".display-4"));
+         Assert.assertEquals("Incorrect Name or Lastname ", (singupName + " " + singupLastName) , name.getText());
 
          //3 Додати авто
 
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[1]/nav/a[1]")).click();
+         driver.findElement(By.cssSelector(".sidebar-wrapper > nav > a:nth-child(1)")).click();
          Thread.sleep(1000);
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-garage/div/div[1]/button")).click();
+         driver.findElement(By.cssSelector(".justify-content-between > button")).click();
          Thread.sleep(1000);
-         driver.findElement(By.cssSelector("option:nth-child(2)")).click();
+         driver.findElement(By.cssSelector("#addCarBrand > option:nth-child(2)")).click();
          Thread.sleep(500);
-         driver.findElement(By.xpath("//*[@id=\"addCarModel\"]/option[3]")).click();
+         driver.findElement(By.cssSelector("#addCarModel > option:nth-child(3)")).click();
          Thread.sleep(500);
          driver.findElement(By.id("addCarMileage")).sendKeys("100");
          Thread.sleep(500);
-         driver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-add-car-modal/div[3]/button[2]")).click();
+         driver.findElement(By.cssSelector(".justify-content-end > button.btn.btn-primary")).click();
          Thread.sleep(1000);
 
          //4 Додати expenses цьому авто
 
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-garage/div/div[2]/div/ul/li/app-car/div/div[1]/div[2]/button[2]")).click();
+         driver.findElement(By.cssSelector(".car_add-expense.btn-success")).click();
          Thread.sleep(1000);
-         driver.findElement(By.id("addExpenseMileage")).click();
-         Thread.sleep(500);
          driver.findElement(By.id("addExpenseMileage")).clear();
          Thread.sleep(500);
          driver.findElement(By.id("addExpenseMileage")).sendKeys("123");
@@ -85,16 +84,16 @@ public class HomeWork {
          Thread.sleep(500);
          driver.findElement(By.id("addExpenseTotalCost")).sendKeys("2");
          Thread.sleep(500);
-         driver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-add-expense-modal/div[3]/button[2]")).click();
+         driver.findElement(By.cssSelector(".justify-content-end > button.btn.btn-primary")).click();
          Thread.sleep(1000);
 
          //5 Видалити користувача
-
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[1]/nav/div/a[2]")).click();
+        // div.col-3.d-none.d-lg-block.sidebar-wrapper > nav > div > a:nth-child(2)
+         driver.findElement(By.cssSelector(".sidebar-wrapper > nav > div > a:nth-child(2)")).click();
          Thread.sleep(1000);
-         driver.findElement(By.xpath("/html/body/app-root/app-global-layout/div/div/div/app-panel-layout/div/div/div/div[2]/div/app-settings/div/div[2]/div/div[5]/div/button")).click();
+         driver.findElement(By.cssSelector(".btn-danger-bg")).click();
          Thread.sleep(1000);
-         driver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-remove-account-modal/div[3]/button[2]")).click();
+         driver.findElement(By.cssSelector(".btn-danger")).click();
          Thread.sleep(1000);
      }
     @After
